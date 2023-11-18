@@ -73,7 +73,18 @@ namespace ChartJSCore.Helpers
 
             try
             {
+                if (hexString == null)
+                {
+                    throw new ArgumentNullException(nameof(hexString), "Hex string cannot be null.");
+                }
+
+                if (hexString.Length == 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(hexString), "Hex string cannot be empty.");
+                }
+
                 hexString = hexString.Remove(0, 1);
+
                 if (hexString.Length == 3)
                 {
                     color.Red = byte.Parse(hexString.Substring(0, 1) + hexString.Substring(0, 1), NumberStyles.HexNumber);
@@ -123,8 +134,8 @@ namespace ChartJSCore.Helpers
                 Red = (byte)rand.Next(0, 256),
                 Green = (byte)rand.Next(0, 256),
                 Blue = (byte)rand.Next(0, 256),
-                Alpha = randomAlpha 
-                    ? rand.NextDouble() 
+                Alpha = randomAlpha
+                    ? rand.NextDouble()
                     : 1.0
             };
         }

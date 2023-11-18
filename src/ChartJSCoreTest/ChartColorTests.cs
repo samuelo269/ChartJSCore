@@ -98,6 +98,22 @@ namespace ChartJSCoreTest
         }
 
         [Test]
+        public void FromHexString_Throws_ArgumentNullException_With_Null_String()
+        {
+            string nullString = null;
+
+            Assert.Throws<ArgumentNullException>(() => ChartColor.FromHexString(nullString));
+        }
+
+        [Test]
+        public void FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String()
+        {
+            string emptyString = "";
+
+            Assert.Throws<ArgumentOutOfRangeException>(() => ChartColor.FromHexString(emptyString));
+        }
+
+        [Test]
         public void FromHexString_Populates_Correct_Values()
         {
             byte expectedRed = 154;
@@ -106,6 +122,22 @@ namespace ChartJSCoreTest
             double expectedAlpha = 1.0;
 
             var actualColor = ChartColor.FromHexString($"#{expectedRed:X}{expectedGreen:X}{expectedBlue:X}");
+
+            Assert.AreEqual(expectedRed, actualColor.Red);
+            Assert.AreEqual(expectedGreen, actualColor.Green);
+            Assert.AreEqual(expectedBlue, actualColor.Blue);
+            Assert.AreEqual(expectedAlpha, actualColor.Alpha);
+        }
+
+        [Test]
+        public void FromHexString_Populates_Correct_Values_Three_Digits()
+        {
+            byte expectedRed = 255;
+            byte expectedGreen = 255;
+            byte expectedBlue = 255;
+            double expectedAlpha = 1.0;
+
+            var actualColor = ChartColor.FromHexString($"#fff");
 
             Assert.AreEqual(expectedRed, actualColor.Red);
             Assert.AreEqual(expectedGreen, actualColor.Green);

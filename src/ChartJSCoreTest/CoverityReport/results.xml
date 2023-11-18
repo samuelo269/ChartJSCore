@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="0" runstate="Runnable" testcasecount="43" result="Failed" total="43" passed="30" failed="13" warnings="0" inconclusive="0" skipped="0" asserts="61" engine-version="3.16.3.0" clr-version="4.0.30319.42000" start-time="2023-11-18 23:39:58Z" end-time="2023-11-18 23:40:01Z" duration="2.386828">
+  <command-line><![CDATA["C:\Users\samue\.nuget\packages\nunit.consolerunner\3.16.3\tools\nunit3-console.exe" D:\C#\ChartJSCore\src\ChartJSCoreTest\bin\Debug\net7.0\ChartJSCoreTest.dll --result:D:\C#\ChartJSCore\src\ChartJSCoreTest\TestResults\results.xml]]></command-line>
+  <test-suite type="Assembly" id="1-1052" name="ChartJSCoreTest.dll" fullname="D:/C#/ChartJSCore/src/ChartJSCoreTest/bin/Debug/net7.0/ChartJSCoreTest.dll" runstate="Runnable" testcasecount="43" result="Failed" site="Child" start-time="2023-11-18T23:40:00.2156578Z" end-time="2023-11-18T23:40:01.1984024Z" duration="0.982384" total="43" passed="30" failed="13" warnings="0" inconclusive="0" skipped="0" asserts="61">
+    <environment framework-version="3.14.0.0" clr-version="7.0.13" os-version="Microsoft Windows 10.0.22631" platform="Win32NT" cwd="D:\C#\ChartJSCore\src\ChartJSCoreTest" machine-name="SAMUEL" user="samue" user-domain="SAMUEL" culture="sk-SK" uiculture="sk-SK" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="D:\C#\ChartJSCore\src\ChartJSCoreTest" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETCoreApp,Version=v7.0" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="TargetRuntimeFramework" value="netcore-7.0" />
+      <setting name="NumberOfTestWorkers" value="8" />
+    </settings>
+    <properties>
+      <property name="_PID" value="272" />
+      <property name="_APPDOMAIN" value="nunit-agent" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="1-1053" name="ChartJSCoreTest" fullname="ChartJSCoreTest" runstate="Runnable" testcasecount="43" result="Failed" site="Child" start-time="2023-11-18T23:40:00.2234878Z" end-time="2023-11-18T23:40:01.1983971Z" duration="0.974909" total="43" passed="30" failed="13" warnings="0" inconclusive="0" skipped="0" asserts="61">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestFixture" id="1-1000" name="BarChartTests" fullname="ChartJSCoreTest.BarChartTests" classname="ChartJSCoreTest.BarChartTests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2023-11-18T23:40:00.2264282Z" end-time="2023-11-18T23:40:00.9561646Z" duration="0.729737" total="3" passed="1" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="3">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1001" name="Generate_BarChart_Generates_Valid_Chart" fullname="ChartJSCoreTest.BarChartTests.Generate_BarChart_Generates_Valid_Chart" methodname="Generate_BarChart_Generates_Valid_Chart" classname="ChartJSCoreTest.BarChartTests" runstate="Runnable" seed="1085100182" result="Failed" start-time="2023-11-18T23:40:00.2340476Z" end-time="2023-11-18T23:40:00.9006297Z" duration="0.666650" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 828 but was 848. Strings differ at index 795.
+  Expected: "...t":true}},"y":{"beginAtZero":true}}}}\r\n);"
+  But was:  "...t":true},"position":"bottom"},"y":{"beginAtZero":true}}}}\r\n);"
+  ----------------------^
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.BarChartTests.Generate_BarChart_Generates_Valid_Chart() in D:\C#\ChartJSCore\src\ChartJSCoreTest\BarChartTests.cs:line 22
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 828 but was 848. Strings differ at index 795.
+  Expected: "...t":true}},"y":{"beginAtZero":true}}}}\r\n);"
+  But was:  "...t":true},"position":"bottom"},"y":{"beginAtZero":true}}}}\r\n);"
+  ----------------------^
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.BarChartTests.Generate_BarChart_Generates_Valid_Chart() in D:\C#\ChartJSCore\src\ChartJSCoreTest\BarChartTests.cs:line 22
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1002" name="Generate_BarChart_With_JsonSerializerSettings_Generates_Valid_Chart" fullname="ChartJSCoreTest.BarChartTests.Generate_BarChart_With_JsonSerializerSettings_Generates_Valid_Chart" methodname="Generate_BarChart_With_JsonSerializerSettings_Generates_Valid_Chart" classname="ChartJSCoreTest.BarChartTests" runstate="Runnable" seed="691313252" result="Failed" start-time="2023-11-18T23:40:00.9036348Z" end-time="2023-11-18T23:40:00.9329193Z" duration="0.029284" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 828 but was 742. Strings differ at index 0.
+  Expected: "var barChartElement = document.getElementById("barChart");\r\nv..."
+  But was:  "{"type":"bar","data":{"datasets":[{"type":"bar","minBarLength..."
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.BarChartTests.Generate_BarChart_With_JsonSerializerSettings_Generates_Valid_Chart() in D:\C#\ChartJSCore\src\ChartJSCoreTest\BarChartTests.cs:line 32
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 828 but was 742. Strings differ at index 0.
+  Expected: "var barChartElement = document.getElementById("barChart");\r\nv..."
+  But was:  "{"type":"bar","data":{"datasets":[{"type":"bar","minBarLength..."
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.BarChartTests.Generate_BarChart_With_JsonSerializerSettings_Generates_Valid_Chart() in D:\C#\ChartJSCore\src\ChartJSCoreTest\BarChartTests.cs:line 32
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1003" name="Check_ToolTip_Creating" fullname="ChartJSCoreTest.BarChartTests.Check_ToolTip_Creating" methodname="Check_ToolTip_Creating" classname="ChartJSCoreTest.BarChartTests" runstate="Runnable" seed="58338187" result="Passed" start-time="2023-11-18T23:40:00.9329758Z" end-time="2023-11-18T23:40:00.9540406Z" duration="0.021066" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1004" name="BubbleChartTests" fullname="ChartJSCoreTest.BubbleChartTests" classname="ChartJSCoreTest.BubbleChartTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2023-11-18T23:40:00.9582302Z" end-time="2023-11-18T23:40:00.9814695Z" duration="0.023238" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="1-1005" name="Generate_BubbleChart_Generates_Valid_Chart" fullname="ChartJSCoreTest.BubbleChartTests.Generate_BubbleChart_Generates_Valid_Chart" methodname="Generate_BubbleChart_Generates_Valid_Chart" classname="ChartJSCoreTest.BubbleChartTests" runstate="Runnable" seed="1638155711" result="Passed" start-time="2023-11-18T23:40:00.9585283Z" end-time="2023-11-18T23:40:00.9813719Z" duration="0.022844" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1023" name="ConvertersTests" fullname="ChartJSCoreTest.ConvertersTests" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" testcasecount="18" result="Failed" site="Child" start-time="2023-11-18T23:40:00.9814886Z" end-time="2023-11-18T23:40:01.0172908Z" duration="0.035802" total="18" passed="9" failed="9" warnings="0" inconclusive="0" skipped="0" asserts="18">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1025" name="CanConvert_OtherType_ReturnsFalse" fullname="ChartJSCoreTest.ConvertersTests.CanConvert_OtherType_ReturnsFalse" methodname="CanConvert_OtherType_ReturnsFalse" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="158793083" result="Passed" start-time="2023-11-18T23:40:00.9817349Z" end-time="2023-11-18T23:40:00.9835087Z" duration="0.001775" asserts="1" />
+        <test-case id="1-1036" name="CanConvert_PaddingType_ReturnsTrue" fullname="ChartJSCoreTest.ConvertersTests.CanConvert_PaddingType_ReturnsTrue" methodname="CanConvert_PaddingType_ReturnsTrue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="456926513" result="Failed" start-time="2023-11-18T23:40:00.9835370Z" end-time="2023-11-18T23:40:00.9866866Z" duration="0.003150" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.CanConvert_PaddingType_ReturnsTrue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 202
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.CanConvert_PaddingType_ReturnsTrue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 202
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1024" name="CanConvert_StringType_ReturnsTrue" fullname="ChartJSCoreTest.ConvertersTests.CanConvert_StringType_ReturnsTrue" methodname="CanConvert_StringType_ReturnsTrue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="2066726506" result="Passed" start-time="2023-11-18T23:40:00.9867154Z" end-time="2023-11-18T23:40:00.9874359Z" duration="0.000721" asserts="1" />
+        <test-case id="1-1037" name="PaddingConverter_CanConvert_OtherType_ReturnsFalse" fullname="ChartJSCoreTest.ConvertersTests.PaddingConverter_CanConvert_OtherType_ReturnsFalse" methodname="PaddingConverter_CanConvert_OtherType_ReturnsFalse" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="2062787542" result="Passed" start-time="2023-11-18T23:40:00.9874554Z" end-time="2023-11-18T23:40:00.9882188Z" duration="0.000764" asserts="1" />
+        <test-case id="1-1038" name="PaddingConverter_ReadJson_ValidInput_ReturnsInputValue" fullname="ChartJSCoreTest.ConvertersTests.PaddingConverter_ReadJson_ValidInput_ReturnsInputValue" methodname="PaddingConverter_ReadJson_ValidInput_ReturnsInputValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="1469382248" result="Failed" start-time="2023-11-18T23:40:00.9882455Z" end-time="2023-11-18T23:40:00.9911925Z" duration="0.002948" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: "test"
+  But was:  null
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.PaddingConverter_ReadJson_ValidInput_ReturnsInputValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 229
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: "test"
+  But was:  null
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.PaddingConverter_ReadJson_ValidInput_ReturnsInputValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 229
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1032" name="PlainJsonStringConverter_CanConvert_OtherType_ReturnsFalse" fullname="ChartJSCoreTest.ConvertersTests.PlainJsonStringConverter_CanConvert_OtherType_ReturnsFalse" methodname="PlainJsonStringConverter_CanConvert_OtherType_ReturnsFalse" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="98158613" result="Passed" start-time="2023-11-18T23:40:00.9912155Z" end-time="2023-11-18T23:40:00.9924130Z" duration="0.001198" asserts="1" />
+        <test-case id="1-1031" name="PlainJsonStringConverter_CanConvert_StringType_ReturnsTrue" fullname="ChartJSCoreTest.ConvertersTests.PlainJsonStringConverter_CanConvert_StringType_ReturnsTrue" methodname="PlainJsonStringConverter_CanConvert_StringType_ReturnsTrue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="457247099" result="Passed" start-time="2023-11-18T23:40:00.9924349Z" end-time="2023-11-18T23:40:00.9929346Z" duration="0.000501" asserts="1" />
+        <test-case id="1-1033" name="PlainJsonStringConverter_ReadJson_ValidInput_ReturnsInputValue" fullname="ChartJSCoreTest.ConvertersTests.PlainJsonStringConverter_ReadJson_ValidInput_ReturnsInputValue" methodname="PlainJsonStringConverter_ReadJson_ValidInput_ReturnsInputValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="1582862388" result="Failed" start-time="2023-11-18T23:40:00.9929608Z" end-time="2023-11-18T23:40:00.9972212Z" duration="0.004261" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: "test"
+  But was:  null
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.PlainJsonStringConverter_ReadJson_ValidInput_ReturnsInputValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 158
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: "test"
+  But was:  null
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.PlainJsonStringConverter_ReadJson_ValidInput_ReturnsInputValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 158
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1026" name="ReadJson_ValidInput_ReturnsInputValue" fullname="ChartJSCoreTest.ConvertersTests.ReadJson_ValidInput_ReturnsInputValue" methodname="ReadJson_ValidInput_ReturnsInputValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="1776239738" result="Failed" start-time="2023-11-18T23:40:00.9972453Z" end-time="2023-11-18T23:40:00.9986656Z" duration="0.001421" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: "test"
+  But was:  null
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.ReadJson_ValidInput_ReturnsInputValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 51
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: "test"
+  But was:  null
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.ReadJson_ValidInput_ReturnsInputValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 51
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1027" name="WriteJson_BoolValue_WritesBoolValue" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_BoolValue_WritesBoolValue" methodname="WriteJson_BoolValue_WritesBoolValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="610060945" result="Passed" start-time="2023-11-18T23:40:00.9986857Z" end-time="2023-11-18T23:40:01.0019003Z" duration="0.003215" asserts="1" />
+        <test-case id="1-1028" name="WriteJson_IntValue_WritesIntValue" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_IntValue_WritesIntValue" methodname="WriteJson_IntValue_WritesIntValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="1058702160" result="Passed" start-time="2023-11-18T23:40:01.0019290Z" end-time="2023-11-18T23:40:01.0031393Z" duration="0.001211" asserts="1" />
+        <test-case id="1-1029" name="WriteJson_NegativeIntValue_WritesIntValue" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_NegativeIntValue_WritesIntValue" methodname="WriteJson_NegativeIntValue_WritesIntValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="739514670" result="Failed" start-time="2023-11-18T23:40:01.0031610Z" end-time="2023-11-18T23:40:01.0047234Z" duration="0.001563" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 3 but was 5. Strings differ at index 0.
+  Expected: "-42"
+  But was:  ""-42""
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_NegativeIntValue_WritesIntValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 99
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 3 but was 5. Strings differ at index 0.
+  Expected: "-42"
+  But was:  ""-42""
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_NegativeIntValue_WritesIntValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 99
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1035" name="WriteJson_NonStringValue_ThrowsArgumentException" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_NonStringValue_ThrowsArgumentException" methodname="WriteJson_NonStringValue_ThrowsArgumentException" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="846518109" result="Failed" start-time="2023-11-18T23:40:01.0047463Z" end-time="2023-11-18T23:40:01.0100765Z" duration="0.005331" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: <System.ArgumentException>
+  But was:  <System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at ChartJSCore.Helpers.PlainJsonStringConverter.WriteJson(JsonWriter writer, Object value, JsonSerializer serializer) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\PlainJsonStringConverter.cs:line 18
+   at ChartJSCoreTest.ConvertersTests.<>c__DisplayClass11_0.<WriteJson_NonStringValue_ThrowsArgumentException>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 187
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_NonStringValue_ThrowsArgumentException() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 187
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: <System.ArgumentException>
+  But was:  <System.InvalidCastException: Unable to cast object of type 'System.Int32' to type 'System.String'.
+   at ChartJSCore.Helpers.PlainJsonStringConverter.WriteJson(JsonWriter writer, Object value, JsonSerializer serializer) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\PlainJsonStringConverter.cs:line 18
+   at ChartJSCoreTest.ConvertersTests.<>c__DisplayClass11_0.<WriteJson_NonStringValue_ThrowsArgumentException>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 187
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_NonStringValue_ThrowsArgumentException() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 187
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1041" name="WriteJson_NullPaddingValue_ThrowsArgumentException" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_NullPaddingValue_ThrowsArgumentException" methodname="WriteJson_NullPaddingValue_ThrowsArgumentException" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="256370376" result="Failed" start-time="2023-11-18T23:40:01.0101028Z" end-time="2023-11-18T23:40:01.0123467Z" duration="0.002245" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: <System.ArgumentException>
+  But was:  <System.NullReferenceException: Object reference not set to an instance of an object.
+   at ChartJSCore.Helpers.PaddingConverter.WriteJson(JsonWriter writer, Object value, JsonSerializer serializer) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\PaddingConverter.cs:line 23
+   at ChartJSCoreTest.ConvertersTests.<>c__DisplayClass17_0.<WriteJson_NullPaddingValue_ThrowsArgumentException>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 274
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_NullPaddingValue_ThrowsArgumentException() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 274
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: <System.ArgumentException>
+  But was:  <System.NullReferenceException: Object reference not set to an instance of an object.
+   at ChartJSCore.Helpers.PaddingConverter.WriteJson(JsonWriter writer, Object value, JsonSerializer serializer) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\PaddingConverter.cs:line 23
+   at ChartJSCoreTest.ConvertersTests.<>c__DisplayClass17_0.<WriteJson_NullPaddingValue_ThrowsArgumentException>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 274
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_NullPaddingValue_ThrowsArgumentException() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 274
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1039" name="WriteJson_PaddingIntValue_WritesPaddingIntValue" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_PaddingIntValue_WritesPaddingIntValue" methodname="WriteJson_PaddingIntValue_WritesPaddingIntValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="1438845279" result="Passed" start-time="2023-11-18T23:40:01.0123703Z" end-time="2023-11-18T23:40:01.0132462Z" duration="0.000877" asserts="1" />
+        <test-case id="1-1040" name="WriteJson_PaddingObjectValue_SerializesPaddingObject" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_PaddingObjectValue_SerializesPaddingObject" methodname="WriteJson_PaddingObjectValue_SerializesPaddingObject" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="1663641998" result="Failed" start-time="2023-11-18T23:40:01.0132667Z" end-time="2023-11-18T23:40:01.0148030Z" duration="0.001537" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 15 but was 4. Strings differ at index 0.
+  Expected: "{"key":"value"}"
+  But was:  "null"
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_PaddingObjectValue_SerializesPaddingObject() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 261
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 15 but was 4. Strings differ at index 0.
+  Expected: "{"key":"value"}"
+  But was:  "null"
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_PaddingObjectValue_SerializesPaddingObject() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 261
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1030" name="WriteJson_StringValue_WritesStringValue" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_StringValue_WritesStringValue" methodname="WriteJson_StringValue_WritesStringValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="338641104" result="Passed" start-time="2023-11-18T23:40:01.0148336Z" end-time="2023-11-18T23:40:01.0157839Z" duration="0.000951" asserts="1" />
+        <test-case id="1-1034" name="WriteJson_ValidStringValue_WritesRawValue" fullname="ChartJSCoreTest.ConvertersTests.WriteJson_ValidStringValue_WritesRawValue" methodname="WriteJson_ValidStringValue_WritesRawValue" classname="ChartJSCoreTest.ConvertersTests" runstate="Runnable" seed="1448198444" result="Failed" start-time="2023-11-18T23:40:01.0158035Z" end-time="2023-11-18T23:40:01.0172432Z" duration="0.001441" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected string length 6 but was 4. Strings differ at index 0.
+  Expected: ""test""
+  But was:  "test"
+  -----------^
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_ValidStringValue_WritesRawValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 174
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected string length 6 but was 4. Strings differ at index 0.
+  Expected: ""test""
+  But was:  "test"
+  -----------^
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ConvertersTests.WriteJson_ValidStringValue_WritesRawValue() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ConverterTests.cs:line 174
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1006" name="ChartColorTests" fullname="ChartJSCoreTest.ChartColorTests" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2023-11-18T23:40:01.0173190Z" end-time="2023-11-18T23:40:01.0510217Z" duration="0.033703" total="16" passed="14" failed="2" warnings="0" inconclusive="0" skipped="0" asserts="34">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-case id="1-1017" name="FromHexString_Populates_Correct_Values" fullname="ChartJSCoreTest.ChartColorTests.FromHexString_Populates_Correct_Values" methodname="FromHexString_Populates_Correct_Values" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="629942739" result="Passed" start-time="2023-11-18T23:40:01.0176189Z" end-time="2023-11-18T23:40:01.0251473Z" duration="0.007529" asserts="4" />
+        <test-case id="1-1018" name="FromHexString_Populates_Correct_Values_Three_Digits" fullname="ChartJSCoreTest.ChartColorTests.FromHexString_Populates_Correct_Values_Three_Digits" methodname="FromHexString_Populates_Correct_Values_Three_Digits" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="734758263" result="Passed" start-time="2023-11-18T23:40:01.0251733Z" end-time="2023-11-18T23:40:01.0263238Z" duration="0.001152" asserts="4" />
+        <test-case id="1-1015" name="FromHexString_Throws_ArgumentNullException_With_Null_String" fullname="ChartJSCoreTest.ChartColorTests.FromHexString_Throws_ArgumentNullException_With_Null_String" methodname="FromHexString_Throws_ArgumentNullException_With_Null_String" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1673885002" result="Failed" start-time="2023-11-18T23:40:01.0263503Z" end-time="2023-11-18T23:40:01.0283911Z" duration="0.002041" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: <System.ArgumentNullException>
+  But was:  <System.FormatException: The hex string has an invalid format. It has to contain 3 or 4 numbers encoded in hex.
+   at ChartJSCore.Helpers.ChartColor.FromHexString(String hexString) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\ChartColor.cs:line 120
+   at ChartJSCoreTest.ChartColorTests.<>c__DisplayClass8_0.<FromHexString_Throws_ArgumentNullException_With_Null_String>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 105
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ChartColorTests.FromHexString_Throws_ArgumentNullException_With_Null_String() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 105
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: <System.ArgumentNullException>
+  But was:  <System.FormatException: The hex string has an invalid format. It has to contain 3 or 4 numbers encoded in hex.
+   at ChartJSCore.Helpers.ChartColor.FromHexString(String hexString) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\ChartColor.cs:line 120
+   at ChartJSCoreTest.ChartColorTests.<>c__DisplayClass8_0.<FromHexString_Throws_ArgumentNullException_With_Null_String>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 105
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ChartColorTests.FromHexString_Throws_ArgumentNullException_With_Null_String() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 105
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1014" name="FromHexString_Throws_FormatException_Invalid_Hex_Character" fullname="ChartJSCoreTest.ChartColorTests.FromHexString_Throws_FormatException_Invalid_Hex_Character" methodname="FromHexString_Throws_FormatException_Invalid_Hex_Character" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="45241460" result="Passed" start-time="2023-11-18T23:40:01.0284141Z" end-time="2023-11-18T23:40:01.0305324Z" duration="0.002119" asserts="1" />
+        <test-case id="1-1013" name="FromHexString_Throws_FormatException_With_False_Length" fullname="ChartJSCoreTest.ChartColorTests.FromHexString_Throws_FormatException_With_False_Length" methodname="FromHexString_Throws_FormatException_With_False_Length" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1765989047" result="Passed" start-time="2023-11-18T23:40:01.0305527Z" end-time="2023-11-18T23:40:01.0321593Z" duration="0.001607" asserts="2" />
+        <test-case id="1-1012" name="FromHexString_Throws_FormatException_Without_Hex_Specifier" fullname="ChartJSCoreTest.ChartColorTests.FromHexString_Throws_FormatException_Without_Hex_Specifier" methodname="FromHexString_Throws_FormatException_Without_Hex_Specifier" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1444845463" result="Passed" start-time="2023-11-18T23:40:01.0321816Z" end-time="2023-11-18T23:40:01.0333284Z" duration="0.001147" asserts="1" />
+        <test-case id="1-1016" name="FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String" fullname="ChartJSCoreTest.ChartColorTests.FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String" methodname="FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="2085091112" result="Failed" start-time="2023-11-18T23:40:01.0333524Z" end-time="2023-11-18T23:40:01.0354846Z" duration="0.002133" asserts="1">
+          <failure>
+            <message><![CDATA[  Expected: <System.ArgumentOutOfRangeException>
+  But was:  <System.FormatException: The hex string has an invalid format. It has to contain 3 or 4 numbers encoded in hex.
+   at ChartJSCore.Helpers.ChartColor.FromHexString(String hexString) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\ChartColor.cs:line 120
+   at ChartJSCoreTest.ChartColorTests.<>c__DisplayClass9_0.<FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 113
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+            <stack-trace><![CDATA[   at ChartJSCoreTest.ChartColorTests.FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 113
+]]></stack-trace>
+          </failure>
+          <assertions>
+            <assertion result="Failed">
+              <message><![CDATA[  Expected: <System.ArgumentOutOfRangeException>
+  But was:  <System.FormatException: The hex string has an invalid format. It has to contain 3 or 4 numbers encoded in hex.
+   at ChartJSCore.Helpers.ChartColor.FromHexString(String hexString) in D:\C#\ChartJSCore\src\ChartJSCore\Helpers\ChartColor.cs:line 120
+   at ChartJSCoreTest.ChartColorTests.<>c__DisplayClass9_0.<FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String>b__0() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 113
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, TestDelegate code, String message, Object[] args)>
+]]></message>
+              <stack-trace><![CDATA[   at ChartJSCoreTest.ChartColorTests.FromHexString_ThrowsArgumentOutOfRangeException_With_Empty_String() in D:\C#\ChartJSCore\src\ChartJSCoreTest\ChartColorTests.cs:line 113
+]]></stack-trace>
+            </assertion>
+          </assertions>
+        </test-case>
+        <test-case id="1-1011" name="FromRgb_Populates_Alpha_With_One" fullname="ChartJSCoreTest.ChartColorTests.FromRgb_Populates_Alpha_With_One" methodname="FromRgb_Populates_Alpha_With_One" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1661287468" result="Passed" start-time="2023-11-18T23:40:01.0355123Z" end-time="2023-11-18T23:40:01.0362443Z" duration="0.000733" asserts="1" />
+        <test-case id="1-1010" name="FromRgb_Populates_Correct_Values" fullname="ChartJSCoreTest.ChartColorTests.FromRgb_Populates_Correct_Values" methodname="FromRgb_Populates_Correct_Values" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1957345510" result="Passed" start-time="2023-11-18T23:40:01.0362691Z" end-time="2023-11-18T23:40:01.0374212Z" duration="0.001153" asserts="3" />
+        <test-case id="1-1009" name="FromRgba_Populates_Correct_Values" fullname="ChartJSCoreTest.ChartColorTests.FromRgba_Populates_Correct_Values" methodname="FromRgba_Populates_Correct_Values" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1584197726" result="Passed" start-time="2023-11-18T23:40:01.0374451Z" end-time="2023-11-18T23:40:01.0385205Z" duration="0.001076" asserts="4" />
+        <test-case id="1-1019" name="GetRandomChartColor_With_Random_Alpha_Returns_Values_In_Boundry" fullname="ChartJSCoreTest.ChartColorTests.GetRandomChartColor_With_Random_Alpha_Returns_Values_In_Boundry" methodname="GetRandomChartColor_With_Random_Alpha_Returns_Values_In_Boundry" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="399710263" result="Passed" start-time="2023-11-18T23:40:01.0385410Z" end-time="2023-11-18T23:40:01.0453253Z" duration="0.006785" asserts="4" />
+        <test-case id="1-1020" name="GetRandomChartColor_Without_Random_Alpha_Returns_Values_In_Boundry_And_Alpha_One" fullname="ChartJSCoreTest.ChartColorTests.GetRandomChartColor_Without_Random_Alpha_Returns_Values_In_Boundry_And_Alpha_One" methodname="GetRandomChartColor_Without_Random_Alpha_Returns_Values_In_Boundry_And_Alpha_One" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1079942333" result="Passed" start-time="2023-11-18T23:40:01.0453531Z" end-time="2023-11-18T23:40:01.0464445Z" duration="0.001092" asserts="4" />
+        <test-case id="1-1007" name="Too_Big_Alpha_Throws_ArgumentOutOfRangeException" fullname="ChartJSCoreTest.ChartColorTests.Too_Big_Alpha_Throws_ArgumentOutOfRangeException" methodname="Too_Big_Alpha_Throws_ArgumentOutOfRangeException" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="261885652" result="Passed" start-time="2023-11-18T23:40:01.0464715Z" end-time="2023-11-18T23:40:01.0477381Z" duration="0.001267" asserts="1" />
+        <test-case id="1-1008" name="Too_Small_Alpha_Throws_ArgumentOutOfRangeException" fullname="ChartJSCoreTest.ChartColorTests.Too_Small_Alpha_Throws_ArgumentOutOfRangeException" methodname="Too_Small_Alpha_Throws_ArgumentOutOfRangeException" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="724350401" result="Passed" start-time="2023-11-18T23:40:01.0477570Z" end-time="2023-11-18T23:40:01.0489022Z" duration="0.001146" asserts="1" />
+        <test-case id="1-1022" name="ToString_Comma_Culture_Returns_Correct_Rgba_String_Representation" fullname="ChartJSCoreTest.ChartColorTests.ToString_Comma_Culture_Returns_Correct_Rgba_String_Representation" methodname="ToString_Comma_Culture_Returns_Correct_Rgba_String_Representation" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="1785282104" result="Passed" start-time="2023-11-18T23:40:01.0489219Z" end-time="2023-11-18T23:40:01.0501502Z" duration="0.001229" asserts="1" />
+        <test-case id="1-1021" name="ToString_Returns_Correct_Rgba_String_Representation" fullname="ChartJSCoreTest.ChartColorTests.ToString_Returns_Correct_Rgba_String_Representation" methodname="ToString_Returns_Correct_Rgba_String_Representation" classname="ChartJSCoreTest.ChartColorTests" runstate="Runnable" seed="21974618" result="Passed" start-time="2023-11-18T23:40:01.0501737Z" end-time="2023-11-18T23:40:01.0509885Z" duration="0.000815" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1042" name="LineChartTests" fullname="ChartJSCoreTest.LineChartTests" classname="ChartJSCoreTest.LineChartTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2023-11-18T23:40:01.0510415Z" end-time="2023-11-18T23:40:01.1009619Z" duration="0.049921" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="1-1043" name="Generate_LineChart_Generates_Valid_Chart" fullname="ChartJSCoreTest.LineChartTests.Generate_LineChart_Generates_Valid_Chart" methodname="Generate_LineChart_Generates_Valid_Chart" classname="ChartJSCoreTest.LineChartTests" runstate="Runnable" seed="1021591306" result="Passed" start-time="2023-11-18T23:40:01.0511934Z" end-time="2023-11-18T23:40:01.1009270Z" duration="0.049734" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1044" name="LineScatterChartTests" fullname="ChartJSCoreTest.LineScatterChartTests" classname="ChartJSCoreTest.LineScatterChartTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2023-11-18T23:40:01.1009794Z" end-time="2023-11-18T23:40:01.1384354Z" duration="0.037456" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="1-1045" name="Generate_LineChartScatter_Generates_Valid_Chart" fullname="ChartJSCoreTest.LineScatterChartTests.Generate_LineChartScatter_Generates_Valid_Chart" methodname="Generate_LineChartScatter_Generates_Valid_Chart" classname="ChartJSCoreTest.LineScatterChartTests" runstate="Runnable" seed="2036514746" result="Passed" start-time="2023-11-18T23:40:01.1012370Z" end-time="2023-11-18T23:40:01.1383954Z" duration="0.037159" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1046" name="PieChartTests" fullname="ChartJSCoreTest.PieChartTests" classname="ChartJSCoreTest.PieChartTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2023-11-18T23:40:01.1384544Z" end-time="2023-11-18T23:40:01.1564234Z" duration="0.017969" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="1-1047" name="Generate_PieChart_Generates_Valid_Chart" fullname="ChartJSCoreTest.PieChartTests.Generate_PieChart_Generates_Valid_Chart" methodname="Generate_PieChart_Generates_Valid_Chart" classname="ChartJSCoreTest.PieChartTests" runstate="Runnable" seed="307667710" result="Passed" start-time="2023-11-18T23:40:01.1387188Z" end-time="2023-11-18T23:40:01.1563742Z" duration="0.017656" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1048" name="PolarChartTests" fullname="ChartJSCoreTest.PolarChartTests" classname="ChartJSCoreTest.PolarChartTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2023-11-18T23:40:01.1564480Z" end-time="2023-11-18T23:40:01.1709797Z" duration="0.014532" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="1-1049" name="Generate_PolarChart_Generates_Valid_Chart" fullname="ChartJSCoreTest.PolarChartTests.Generate_PolarChart_Generates_Valid_Chart" methodname="Generate_PolarChart_Generates_Valid_Chart" classname="ChartJSCoreTest.PolarChartTests" runstate="Runnable" seed="1771779597" result="Passed" start-time="2023-11-18T23:40:01.1567462Z" end-time="2023-11-18T23:40:01.1709435Z" duration="0.014198" asserts="1" />
+      </test-suite>
+      <test-suite type="TestFixture" id="1-1050" name="RadarChartTests" fullname="ChartJSCoreTest.RadarChartTests" classname="ChartJSCoreTest.RadarChartTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2023-11-18T23:40:01.1709978Z" end-time="2023-11-18T23:40:01.1983854Z" duration="0.027388" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <test-case id="1-1051" name="Generate_RadarChart_Generates_Valid_Chart" fullname="ChartJSCoreTest.RadarChartTests.Generate_RadarChart_Generates_Valid_Chart" methodname="Generate_RadarChart_Generates_Valid_Chart" classname="ChartJSCoreTest.RadarChartTests" runstate="Runnable" seed="114014182" result="Passed" start-time="2023-11-18T23:40:01.1730390Z" end-time="2023-11-18T23:40:01.1983504Z" duration="0.025311" asserts="1" />
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
